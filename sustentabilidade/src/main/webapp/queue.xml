@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<queue-entries>
+  <queue>
+    <name>proposta-pull-queue</name>
+    <mode>pull</mode>
+    <acl>
+      <user-email>cit.jenkins.sas@gmail.com</user-email>
+      <user-email>gae@nimbocit.com</user-email>
+    </acl>
+  </queue>
+</queue-entries>

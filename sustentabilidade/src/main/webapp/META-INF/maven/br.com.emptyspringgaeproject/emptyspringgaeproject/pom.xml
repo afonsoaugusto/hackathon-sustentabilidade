@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+	http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<!-- The Basics -->
+	<groupId>br.com.emptyspringgaeproject</groupId>
+	<artifactId>emptyspringgaeproject</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<name>empty</name>
+	<description />
+	<inceptionYear>2013</inceptionYear>
+	<organization>
+		<name>Leandro Vendramin</name>
+	</organization>
+	
+	<repositories>
+		<repository>
+			<id>objectify-appengine</id>
+			<url>http://maven.objectify-appengine.googlecode.com/git/</url>
+		</repository>
+	</repositories>
+            
+
+
+	<dependencies>
+
+		<!-- Gson: Java to Json conversion -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>1.7.1</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.jdo</groupId>
+			<artifactId>jdo2-api</artifactId>
+			<version>2.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.simpleframework</groupId>
+			<artifactId>simple-xml</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.googlecode.objectify-appengine-spring</groupId>
+			<artifactId>objectify-appengine-spring</artifactId>
+			<version>1.1.1</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-logging</artifactId>
+					<groupId>commons-logging</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>appengine-api-1.0-sdk</artifactId>
+			<version>${gae.version}</version>
+		</dependency>
+
+	    <dependency>
+	      <groupId>com.googlecode.objectify</groupId>
+	      <artifactId>objectify</artifactId>
+	      <version>3.0</version>
+	    </dependency>
+	
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${org.springframework.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-logging</artifactId>
+					<groupId>commons-logging</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</dependency>		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
+			<version>3.0.5.RELEASE</version>
+		</dependency>
+		
+
+		<!-- Make use of JSP tags. Remove, if you don't use JSPs. -->
+		<!--dependency>
+			<artifactId>standard</artifactId>
+			<groupId>taglibs</groupId>
+			<version>1.1.2</version>
+			<type>jar</type>
+			<scope>runtime</scope>
+		</dependency-->
+
+		<!-- These dependencies are here just for enabling logging. -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jdk14</artifactId>
+			<version>1.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>1.6.0</version>
+		</dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>ch.qos.logback</groupId> -->
+<!-- 			<artifactId>logback-classic</artifactId> -->
+<!-- 			<version>0.9.29</version> -->
+<!-- 		</dependency> -->
+
+		<!-- Joda Time -->
+		<!--dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>1.6.2</version>
+		</dependency-->
+
+		<!-- Jackson JSON Mapper -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.7.2</version>
+		</dependency>
+
+		<!-- Test scope -->
+		<!--dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework.version}</version>
+			<scope>test</scope>
+		</dependency-->
+
+		<!-- GAE libraries for local testing as described here: http://code.google.com/appengine/docs/java/howto/unittesting.html -->
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>appengine-api-labs</artifactId>
+			<version>${gae.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>appengine-api-stubs</artifactId>
+			<version>${gae.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>appengine-testing</artifactId>
+			<version>${gae.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!--dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.8.5</version>
+			<scope>test</scope>
+		</dependency-->
+
+		<!--dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-mock</artifactId>
+            <version>2.0.6</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>commons-logging</artifactId>
+                    <groupId>commons-logging</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency-->
+        
+
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator-annotation-processor</artifactId>
+			<version>4.1.0.Final</version>
+		</dependency>
+
+		<!--dependency>
+			<groupId>com.googlecode</groupId>
+			<artifactId>repacked-webutilities</artifactId>
+			<version>0.0.5</version>
+		</dependency-->
+		
+		<!--dependency>
+			<groupId>com.yahoo.platform.yui</groupId>
+			<artifactId>repacked-yuicompressor</artifactId>
+			<version>2.4.7</version>
+		</dependency-->
+            
+	</dependencies>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.archetype</groupId>
+				<artifactId>archetype-packaging</artifactId>
+				<version>2.0-alpha-5</version>
+			</extension>
+		</extensions>
+
+		<plugins>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>7.1.2.v20100523</version>
+				<configuration>
+					<webAppConfig>
+						<contextPath>/${project.name}</contextPath>
+					</webAppConfig>
+				</configuration>
+			</plugin>
+			<!-- The actual maven-gae-plugin. Type "mvn gae:run" to run project, "mvn 
+				gae:deploy" to upload to GAE. -->
+			<plugin>
+				<groupId>net.kindleit</groupId>
+				<artifactId>maven-gae-plugin</artifactId>
+				<version>0.9.0</version>
+				<configuration>
+					<splitJars>true</splitJars>
+					<address>127.0.0.1</address>
+					<serverId>appengine.google.com</serverId>
+					<sdkDir>${appengine.sdk.root}</sdkDir>
+					<appDir>${basedir}/target/${project.artifactId}-${project.version}</appDir>
+				</configuration>
+			</plugin>
+
+			<!-- Java compiler version -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<verbose>true</verbose>
+					<fork>true</fork>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>com.googlecode.jslint4java</groupId>
+				<artifactId>jslint4java-maven-plugin</artifactId>
+				<version>2.0.0</version>
+				<configuration>
+
+					<failOnError>false</failOnError>
+					<options>
+						<undef>true</undef>
+						<white>true</white>
+					</options>
+
+					<sourceFolders>
+						<sourceFolder>${basedir}/src/main/webapp/resources/js</sourceFolder>
+					</sourceFolders>
+
+					<excludes>
+						<exclude>**/jquery*.js</exclude>
+						<exclude>**/*.min.js</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+
+
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.2.1</version>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>src</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
+			
+		</plugins>
+	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.1</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>index</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.7.2</version>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>emma-maven-plugin</artifactId>
+				<version>1.0-alpha-3</version>
+				<inherited>true</inherited>
+				<configuration>
+					<sourcePaths>
+						<sourcePath>${basedir}/src/main/java</sourcePath>
+					</sourcePaths>
+					<instrumentationPaths>
+						<instrumentationPath>${basedir}/target/classes</instrumentationPath>
+					</instrumentationPaths>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<!-- Specify hard-coded project properties here. -->
+	<properties>
+
+		<!-- Sets the project's default encoding. http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<org.springframework.version>3.0.5.RELEASE</org.springframework.version>
+
+		<!-- This is just for "eclipse:eclipse" goal to always attempt downloading 
+			sources. -->
+		<downloadSources>true</downloadSources>
+
+		<!-- Specify AppEngine version for your project. It should match SDK version 
+			pointed to by ${gae.home} property (Typically, one used by your Eclipse plug-in). -->
+		<gae.version>1.5.3</gae.version>
+		<gae.application>lvhangoutapp</gae.application>
+		<gae.application.version>dev</gae.application.version>
+		<gae.home></gae.home>
+		<!-- Upload to http://test.latest.<applicationName>.appspot.com by default. -->
+		
+
+		<appengine.sdk.root>C:\appengine-java-sdk-1.5.3</appengine.sdk.root>
+		
+	</properties>
+
+	<profiles>
+
+        <profile>
+            <id>emp</id>
+            <properties>
+                <feature.toggle.file.location>classpath:feature-toggle/emp.properties</feature.toggle.file.location>
+            </properties>
+        </profile>
+
+		<profile>
+			<id>jenkins</id>
+<!-- 			<activation> -->
+<!-- 				<property> -->
+<!-- 					<name>env.BUILD_NUMBER</name> -->
+<!-- 				</property> -->
+<!-- 			</activation> -->
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.6</version>
+						<executions>
+							<execution>
+								<phase>generate-resources</phase>
+								<configuration>
+									<target>
+										<echo file="pipeline.properties">
+											build.number=${env.BUILD_NUMBER}
+											groupId=${project.groupId}
+											version=${project.version}.${env.BUILD_NUMBER}
+											artifactId=${project.artifactId}
+											repoUrl=${project.distributionManagement.repository.url}
+											artifactName=${project.build.finalName}.war
+											job.name=${env.JOB_NAME}
+											node.name=${env.NODE_NAME}
+											build.url=${env.BUILD_URL}
+											job.url=${env.JOB_URL}
+											svn.revision=${env.SVN_REVISION}</echo>
+									</target>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-deploy-plugin</artifactId>
+						<version>2.7</version>
+						<goals>
+							<goal>deploy-file</goal>
+						</goals>
+						<configuration>
+							<repositoryId>nexus-releases</repositoryId>
+							<packaging>war</packaging>
+							<generatePom>true</generatePom>
+							<url>${project.distributionManagement.repository.url}</url>
+							<artifactId>${project.artifactId}</artifactId>
+							<groupId>${project.groupId}</groupId>
+							<version>${project.version}.${env.BUILD_NUMBER}</version>
+							<file> ${project.build.directory}/${project.build.finalName}.war</file>
+						</configuration>
+					</plugin>
+				</plugins>
+				<finalName>${project.artifactId}-${project.version}.${env.BUILD_NUMBER}</finalName>
+			</build>
+		</profile>
+	</profiles>
+
+</project>

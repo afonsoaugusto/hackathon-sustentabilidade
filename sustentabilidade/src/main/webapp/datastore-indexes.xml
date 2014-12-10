@@ -1,0 +1,1460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes autoGenerate="false">
+
+    <datastore-index kind="CidadeEstado" ancestor="false"
+        source="manual">
+        <property name="estado" direction="asc" />
+        <property name="cidade" direction="asc" />
+    </datastore-index>
+
+    <datastore-index kind="Banco" ancestor="false" source="manual">
+        <property name="nome" direction="asc" />
+        <property name="ranking" direction="asc" />
+    </datastore-index>
+
+    <datastore-index kind="Banco" ancestor="false" source="manual">
+        <property name="ranking" direction="asc" />
+        <property name="nome" direction="asc" />
+    </datastore-index>
+    
+    <!--                      PROPOSTA                           -->
+
+   <!-- Used 1 time in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemStatus" direction="desc"/>
+        <property name="dataCriacao" direction="desc"/>
+        <property name="ordemNumeroProposta" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemStatus" direction="desc"/>
+        <property name="dataTransmissao" direction="desc"/>
+        <property name="ordemNumeroProposta" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemStatus" direction="desc"/>
+        <property name="dataFinalizacao" direction="desc"/>
+        <property name="ordemNumeroProposta" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+
+	<datastore-index kind="Proposta" ancestor="false"
+		source="manual">
+        <property name="idOwners" direction="asc"/>
+		<property name="deletedAt" direction="asc" />
+		<property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+		<property name="ordemStatus" direction="desc" />
+		<property name="dataCriacao" direction="desc" />
+		<property name="ordemNumeroProposta" direction="asc" />
+		<property name="empresa.razaoSocialBusca" direction="asc" />
+	</datastore-index>
+
+	<datastore-index kind="Proposta" ancestor="false"
+		source="manual">
+        <property name="idOwners" direction="asc"/>
+		<property name="deletedAt" direction="asc" />
+		<property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+		<property name="ordemStatus" direction="desc" />
+		<property name="dataTransmissao" direction="desc" />
+		<property name="ordemNumeroProposta" direction="asc" />
+		<property name="empresa.razaoSocialBusca" direction="asc" />
+	</datastore-index>
+
+
+	<datastore-index kind="Proposta" ancestor="false"
+		source="manual">
+		<property name="idOwners" direction="asc"/>
+		<property name="deletedAt" direction="asc" />
+		<property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+		<property name="ordemStatus" direction="desc" />
+		<property name="dataFinalizacao" direction="desc" />
+		<property name="ordemNumeroProposta" direction="asc" />
+		<property name="empresa.razaoSocialBusca" direction="asc" />
+	</datastore-index>
+
+
+	<datastore-index kind="Proposta" ancestor="false"
+		source="manual">
+		<property name="idOwners" direction="asc"/>
+		<property name="empresa.tipoDocumento" direction="asc" />
+		<property name="ordemStatus" direction="desc" />
+		<property name="dataFinalizacao" direction="desc" />
+		<property name="ordemNumeroProposta" direction="asc" />
+		<property name="empresa.razaoSocialBusca" direction="asc" />
+	</datastore-index>
+
+	<datastore-index kind="Proposta" ancestor="false"
+		source="manual">
+        <property name="idOwners" direction="asc"/>
+		<property name="deletedAt" direction="asc" />
+		<property name="empresa.tipoDocumento" direction="asc" />
+		<property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+		<property name="ordemStatus" direction="desc" />
+		<property name="dataFinalizacao" direction="desc" />
+		<property name="ordemNumeroProposta" direction="asc" />
+		<property name="empresa.razaoSocialBusca" direction="asc" />
+	</datastore-index>
+
+
+	<datastore-index kind="Proposta" ancestor="false"
+		source="manual">
+        <property name="idOwners" direction="asc"/>
+		<property name="empresa.tipoDocumento" direction="asc" />
+		<property name="ordemStatus" direction="desc" />
+		<property name="dataTransmissao" direction="desc" />
+		<property name="ordemNumeroProposta" direction="asc" />
+		<property name="empresa.razaoSocialBusca" direction="asc" />
+	</datastore-index>
+
+	<datastore-index kind="Proposta" ancestor="false"
+		source="manual">
+        <property name="idOwners" direction="asc"/>
+		<property name="deletedAt" direction="asc" />
+		<property name="empresa.tipoDocumento" direction="asc" />
+		<property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+		<property name="ordemStatus" direction="desc" />
+		<property name="dataTransmissao" direction="desc" />
+		<property name="ordemNumeroProposta" direction="asc" />
+		<property name="empresa.razaoSocialBusca" direction="asc" />
+	</datastore-index>
+
+	<datastore-index kind="Proposta" ancestor="false"
+		source="manual">
+		<property name="empresa.tipoDocumento" direction="asc" />
+		<property name="ordemStatus" direction="desc" />
+		<property name="dataCriacao" direction="desc" />
+		<property name="ordemNumeroProposta" direction="asc" />
+		<property name="empresa.razaoSocialBusca" direction="asc" />
+	</datastore-index>
+
+	<datastore-index kind="Proposta" ancestor="false"
+		source="manual">
+        <property name="idOwners" direction="asc"/>
+		<property name="deletedAt" direction="asc" />
+		<property name="empresa.tipoDocumento" direction="asc" />
+		<property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+		<property name="ordemStatus" direction="desc" />
+		<property name="dataCriacao" direction="desc" />
+		<property name="ordemNumeroProposta" direction="asc" />
+		<property name="empresa.razaoSocialBusca" direction="asc" />
+	</datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemNumeroProposta" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="desc"/>
+    </datastore-index>    
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.documento" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="dataCriacao" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemProduto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemVidas" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemPremioFinal" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemStatus" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="dataTransmissao" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.documento" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="dataCriacao" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="dataTransmissao" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemProduto" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemVidas" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemPremioFinal" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemStatus" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="dataFinalizacao" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="dataFinalizacao" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="desc"/>
+    </datastore-index>
+
+   <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="dataTransmissao" direction="desc"/>
+   </datastore-index>
+
+   <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="dataFinalizacao" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="dataTransmissao" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="dataFinalizacao" direction="asc"/>
+    </datastore-index>
+        
+    <!--  PROPOSTA -->
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemNumeroProposta" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemNumeroProposta" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="empresa.razaoSocialBusca" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="empresa.documento" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="empresa.documento" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 5 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataCriacao" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 5 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataCriacao" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemProduto" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemProduto" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemVidas" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemVidas" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemPremioFinal" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemPremioFinal" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemStatus" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 50 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemStatus" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 30 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataTransmissao" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 30 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataTransmissao" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 15 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataFinalizacao" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 15 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataFinalizacao" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemNumeroProposta" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemNumeroProposta" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="empresa.razaoSocialBusca" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="empresa.documento" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="empresa.documento" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 6 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataCriacao" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 6 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataCriacao" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 53 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemProduto" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 53 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemProduto" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemVidas" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemVidas" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 57 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemPremioFinal" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemPremioFinal" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemStatus" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 51 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="ordemStatus" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 30 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataTransmissao" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 30 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataTransmissao" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 15 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataFinalizacao" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 15 times in query history -->
+    <datastore-index kind="Proposta" ancestor="false" source="auto">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataFinalizacao" direction="asc"/>
+    </datastore-index>
+
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc"/>
+        <property name="ordemStatus" direction="desc"/>
+        <property name="dataFinalizacao" direction="desc"/>
+        <property name="ordemNumeroProposta" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+    
+     <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc"/>
+        <property name="ordemStatus" direction="desc"/>
+        <property name="dataTransmissao" direction="desc"/>
+        <property name="ordemNumeroProposta" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="statusSaude" direction="asc"/>
+        <property name="ordemStatus" direction="desc"/>
+        <property name="dataCriacao" direction="desc"/>
+        <property name="ordemNumeroProposta" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+    
+    <!-- INICIO - Cotador PME Integração - tbarz -->
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="ordemNumeroProposta" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="numeroProposta" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="produto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="numeroDeVidas" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="idOwners" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="valor" direction="desc"/>
+    </datastore-index>
+    
+    
+
+	<datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="ordemStatus" direction="desc"/>
+    </datastore-index>
+	
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="ordemStatus" direction="asc"/>
+    </datastore-index>	
+	
+	<datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="ordemPremioFinal" direction="desc"/>
+    </datastore-index>
+	
+	<datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="ordemVidas" direction="desc"/>
+    </datastore-index>
+	
+	<datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="ordemVidas" direction="asc"/>
+    </datastore-index>
+	
+	 <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="ordemProduto" direction="desc"/>
+    </datastore-index>
+	
+	 <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="ordemProduto" direction="asc"/>
+    </datastore-index>
+	
+	<datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="dataCriacao" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="dataCriacao" direction="asc"/>
+    </datastore-index>
+	
+	
+	<datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="ordemNumeroProposta" direction="asc"/>
+    </datastore-index>
+	
+	<datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="ordemNumeroProposta" direction="desc"/>
+    </datastore-index>
+
+	
+	 <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+	
+	<datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+	
+	<datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="empresa.documento" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="empresa.documento" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Proposta" ancestor="false" source="manual">
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="ordemPremioFinal" direction="asc"/>
+    </datastore-index>
+    <!-- FIM - Cotador PME Integração - tbarz -->
+
+    <!--                      COTACAO                            -->
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="dataCriacao" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+		<property name="^i" direction="asc"/>
+		<property name="status" direction="asc"/>
+		<property name="dataExpiracao" direction="asc"/>
+	</datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="dataCriacao" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.documento" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="produto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="premioFinalOdonto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="premioFinalSaude" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="produto" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.documento" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="totalDeVidas" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="totalDeVidas" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="premioFinalSaude" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="premioFinalOdonto" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="dataCriacao" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="ordemStatus" direction="desc"/>
+    </datastore-index>
+
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="ordemStatus" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="statusSaude" direction="desc" />
+        <property name="statusOdonto" direction="desc" />
+    </datastore-index>
+    
+     <datastore-index kind="Cotacao" ancestor="false" source="manual">
+     	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+     	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="statusSaude" direction="asc" />
+        <property name="statusOdonto" direction="asc" />
+    </datastore-index>    
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasSaude" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasSaude" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasOdonto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasOdonto" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="dataCriacao" direction="desc"/>
+    </datastore-index>    
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.documento" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.documento" direction="asc"/>
+    </datastore-index>
+       
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="produto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="produto" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasSaude" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasSaude" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="premioFinalSaude" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="premioFinalSaude" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasOdonto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasOdonto" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="premioFinalOdonto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="premioFinalOdonto" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="dataCriacao" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="dataCriacao" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+    	<property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+    	<property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="dataCriacao" direction="desc"/>
+    </datastore-index>
+
+	<!-- Indices para CotacaoEmpresarial  -->
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="descricaoProduto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="descricaoProduto" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="protocolo.ordem" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="protocolo.ordem" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="descricaoProduto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="descricaoProduto" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="protocolo.ordem" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="empresa.tipoDocumento" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="protocolo.ordem" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="dataCriacao" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="statusSaude" direction="asc" /><property name="statusOdonto" direction="asc" />
+        <property name="dataExpiracao" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="dataCriacao" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="dataCriacao" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.razaoSocialBusca" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.documento" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="empresa.documento" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="descricaoProduto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="descricaoProduto" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasSaude" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasSaude" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasOdonto" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="vidasOdonto" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="protocolo" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="protocolo" direction="asc"/>
+    </datastore-index> 
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="protocolo.ordem" direction="desc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Cotacao" ancestor="false" source="manual">
+        <property name="^i" direction="asc"/>
+        <property name="idOwners" direction="asc"/>
+        <property name="dataGeracaoBoleto" direction="asc"/>
+        <property name="deletedAt" direction="asc"/>
+        <property name="protocolo.numero" direction="asc"/>
+        <property name="transmitidaAt" direction="asc"/>
+        <property name="protocolo.ordem" direction="asc"/>
+    </datastore-index>
+    
+    <!-- TITULAR  -->
+    <datastore-index kind="Titular" ancestor="false" source="manual">
+        <property name="propostaId" direction="asc"/>        
+        <property name="nomeBusca" direction="asc"/>
+    </datastore-index>
+    
+    <!-- Historico de Status Proposta - Cotador Integração -->
+    <datastore-index kind="HistoricoStatusPropostaSAS" ancestor="false" source="manual">
+        <property name="numeroProposta" direction="asc"/>
+        <property name="dataModificacao" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="HistoricoStatusPropostaSAS" ancestor="false" source="manual">
+        <property name="numeroEstudo" direction="asc"/>
+        <property name="dataModificacao" direction="asc"/>
+    </datastore-index>
+    
+    <!-- Historico de Critica - Cotador Integração -->
+    <datastore-index kind="CriticaPropostaSAS" ancestor="false" source="manual">
+        <property name="numProposta" direction="asc"/>
+        <property name="dataInclusao" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="CriticaPropostaSAS" ancestor="false" source="manual">
+        <property name="numEstudo" direction="asc"/>
+        <property name="dataInclusao" direction="asc"/>
+    </datastore-index>
+    
+    <datastore-index kind="Vendedor" ancestor="false" source="manual">
+        <property name="codigosCorretores" direction="asc"/>
+        <property name="nomeBusca" direction="asc"/>
+    </datastore-index>
+    
+</datastore-indexes>

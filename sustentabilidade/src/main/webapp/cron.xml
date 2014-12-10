@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/cron/cotacaoStatus/index</url>
+    <description>Mensalmente, altera o status das cotacoes ativas para expirado.</description>
+    <schedule>1 of month 00:00 </schedule>
+    <timezone>America/Sao_Paulo</timezone>
+  </cron>
+  <cron>
+    <url>/cron/excluirCotacoesAntigas/index</url>
+    <description>Mensalmente, exclui cotacoes que tenham mais de um ano.</description>
+    <schedule>1 of month 00:00</schedule>
+    <timezone>America/Sao_Paulo</timezone>
+  </cron>
+  <cron>
+    <url>/cron/cotacaoStatusEmpresarial/index</url>
+    <description>Diariamente, altera o status das cotacoes ativas para expirado.</description>
+    <schedule>every day 00:00</schedule>
+    <timezone>America/Sao_Paulo</timezone>
+  </cron>
+  <cron>
+    <url>/_ah/datastore_admin/backup.create?name=BackupToCloud&amp;kind=Cotacao&amp;kind=Proposta&amp;kind=Vendedor&amp;filesystem=blobstore</url>
+    <description>Diariamente, faz BackUp das principais entidades.</description>
+    <schedule>every day 02:00</schedule>
+    <timezone>America/Sao_Paulo</timezone>
+    <target>ah-builtin-python-bundle</target>
+  </cron>
+  
+</cronentries>
