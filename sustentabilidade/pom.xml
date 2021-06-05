@@ -12,7 +12,7 @@
 	<packaging>war</packaging>
 
 	<name>hackathon</name>
-	<description />
+	<description/>
 	<inceptionYear>2013</inceptionYear>
 	<organization>
 		<name>CI&amp;T</name>
@@ -259,7 +259,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore></ignore>
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
@@ -424,7 +424,7 @@
 
 		<!-- Sets the project's default encoding. http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<org.springframework.version>3.0.5.RELEASE</org.springframework.version>
+		<org.springframework.version>5.3.7</org.springframework.version>
 		<sitemesh.version>3.0-alpha-2</sitemesh.version>
 
 		<!-- This is just for "eclipse:eclipse" goal to always attempt downloading 
